@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: mzansi-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: mzansi
+      POSTGRES_PASSWORD: mzansi_pass
+      POSTGRES_DB: mzansi_gpt
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  backend:
+    build: ./backend
+    container_name: mzansi-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - postgres
+    ports:
+      - "5000:5000"
+
+volumes:
+  postgres_data:
