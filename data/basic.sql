@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS students;
+SELECT * FROM students
