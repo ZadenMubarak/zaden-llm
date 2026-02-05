@@ -225,10 +225,11 @@ export default function Chat() {
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Type your message... (Press Enter to send, Shift+Enter for new line)"
-                className="flex-1 rounded-2xl bg-muted border border-muted-foreground/30 px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-primary transition-all"
+                className="no-scroll flex-1 rounded-2xl bg-muted border border-muted-foreground/30 px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                 disabled={isLoading}
                 rows={1}
                 style={{ minHeight: "44px", maxHeight: "200px" }}
+                
               />
               <Button
                 type="submit"
