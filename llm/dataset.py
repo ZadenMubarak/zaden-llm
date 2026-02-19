@@ -1,6 +1,6 @@
 from datasets import load_dataset
 
-ds = load_dataset("Skylion007/openwebtext")
+ds = load_dataset("Skylion007/openwebtext", streaming=True, split="train")
 
 print(ds)
 
