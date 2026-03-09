@@ -33,7 +33,7 @@ for i in range(split_files):
             file_path = os.path.join(folder_path, filename)
 
             # OPEN ARROW FILE
-            with ipc.open_file(file_path) as reader:
+            with ipc.open_stream(file_path) as reader:
                 table = reader.read_all()
 
             # Convert to python dict
