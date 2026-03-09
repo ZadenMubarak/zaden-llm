@@ -25,13 +25,9 @@ max_count = total_files // split_files if split_files != 0 else total_files
 vocab = set()
 
 for i in range(split_files):
-<<<<<<< HEAD
 
     with open(f"output{i}.txt", "w", encoding="utf-8") as output_file:
 
-=======
-    with open(f"ou", "w", encoding="utf-8") as output_file:
->>>>>>> c5ba9827 (vocab file funcrtionality)
         for count, filename in enumerate(tqdm(files[:max_count], total=max_count)):
 
             file_path = os.path.join(folder_path, filename)
