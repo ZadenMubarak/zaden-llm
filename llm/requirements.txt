@@ -3,3 +3,4 @@ pylzma
 tokenizers
 tqdm
 transformers
+pyarrow
