@@ -2,4 +2,6 @@ cuda/
 
 output_train.txt
 output_val.txt
+train_split.txt
+val_split.txt
 vocab.txt
