@@ -5,3 +5,4 @@ tokenizers
 tqdm
 transformers
 pyarrow
+datasets
