@@ -11,14 +11,24 @@ device = "cpu"
 
 print(f'{"\033[92m"}Loading please wait...')
 
-block_size = 1024 #
-batch_size = 64 #
+# block_size = 32 #
+# batch_size = 64 #
+# max_iterations = 10000 #
+# learning_rate = 3e-4 #
+# evaluate_iterations = 250 #
+# n_embd = 384
+# n_head = 8
+# n_layer = 8
+# dropout = 0.2
+
+block_size = 316 #
+batch_size = 32 #
 max_iterations = 10000 #
 learning_rate = 3e-4 #
 evaluate_iterations = 250 #
 n_embd = 254
-n_head = 12
-n_layer = 12
+n_head = 4
+n_layer = 4
 dropout = 0.2
 
 chars = set()

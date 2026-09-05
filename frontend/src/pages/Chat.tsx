@@ -99,7 +99,7 @@ export default function Chat() {
       const assistantMessage = {
         id: (Date.now() + 1).toString(),
         role: "assistant" as const,
-        content: `Thank you for your message! This is a simulated response. In a real application, this would be connected to an AI model like GPT-4. Your message was: "${input.substring(0, 100)}${input.length > 100 ? "..." : ""}"`,
+        content: "Hmm... The one piece is still a mystery, but I can help you find it! Let's start by narrowing down the possibilities. What kind of clues or information do you have about the one piece?",
         timestamp: Date.now(),
       };
 
